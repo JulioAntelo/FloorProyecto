@@ -1,0 +1,22 @@
+class ToDo {
+  String? id;
+  String? todoText;
+  bool isDone;
+
+  ToDo({
+    required this.id,
+    required this.todoText,
+    this.isDone = false,
+  });
+
+  static List<ToDo> todoList() {
+    return [
+      ToDo(id: '01', todoText: 'Despertarse', isDone: true ),
+      ToDo(id: '02', todoText: 'Pasear al perrete', isDone: true ),
+      ToDo(id: '03', todoText: 'Desayunar', ),
+      ToDo(id: '04', todoText: 'Mirar al infinito', ),
+      ToDo(id: '05', todoText: 'Cuestionarme mi vida por 2h', ),
+      ToDo(id: '06', todoText: 'Dormir', ),
+    ];
+  }
+}
